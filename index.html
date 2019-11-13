@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Password Generator</h1>
+        <p>Choose from the following password criteria:</p>
+    </header>
+
+<!-- SELECTOR - Length 8 -128 -->
+        <div>
+          <select id="characters">
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+          </select>
+          <button onclick="handleCharacters()">What does this button do</button>
+        </div>
+
+<!-- Checkbox Special characters -->
+ <div>
+    <input id="special" type="checkbox"/> Use special characters (!@#$%^&*)
+          <div>
+            <!-- <button onclick="handleSpecial()">click bait</button> -->
+          </div>
+        </div>
+
+<!-- Checkbox Numeric characters -->
+ <div>
+        <input id="numeric" type="checkbox"/> Use numeric characters (12345)
+              <div>
+                <!-- <button onclick="handleNumeric()">click bait</button> -->
+              </div>
+            </div>
+
+<!-- Checkbox lowercase characters -->
+<div>
+     <input id="lower" type="checkbox"/> Use lowercase characters 
+        <div>
+          <!-- <button onclick="handleLower()">click bait</button> -->
+        </div>
+    </div>
+<!-- Checkbox Uppercase characters -->
+<div>
+    <input id="upper" type="checkbox"/> Use uppercase characters
+</div>
+
+    <output>
+        <div></div>
+    </output>
+
+
+<script>
+const specialchar = ["!","@","#","$","%","^","&","*","?","~"]
+const numchar = ["0","1","2","3","4","5","6","7","8"]
+const lowchar = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+const upperchar = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z”]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
