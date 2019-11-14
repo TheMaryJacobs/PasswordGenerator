@@ -6,95 +6,60 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/styles.css">
+
 </head>
+<body class="">
+<!-- ========================================================================================================= -->
+<nav class="navbar sticky-top navbar-light bg-warning">
+        <a class="navbar-brand" href="#">Super Secure and Functional Password Generator</a>
+</nav>
 
-<body>
-  
-
-
-<section class="container">
-  <header>
-        <h1>Password Generator</h1>
-        <p>Generate a random password based on your choosen criteria.</p>
-    </header>
-    <div class="row">
+<div class="container m-5 pl-5 pt-5 pb-3 justify-content-center shadow bg-white">   
+<div class="row">
+    <h2>Generate a random password based on your choosen criteria.</h2>
+	<div class="settings">
+		<div class="setting">
+            <label>Password length</label>
             <p>Select the length of your password. Must be between 8-128 characters.</p>
-    <!-- SELECTOR - Length 8 -128 -->
-        <div>
-        <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number -->
-                <input type="number" id="PWlength" 
-                min="8" max="128">
+			<input type="number" id="length" min='4' max='20' value='20' />
         </div>
+    </div>
 </div>
+<br>
 <p>Select AT LEAST one type of character to use.</p>
-<!-- Checkbox Special characters -->
- <div>
-    <input id="special" type="checkbox"/> Use special characters (!@#$%^&*)
+<div class="row">
+        
+		<div class="setting">
+			<label>Include uppercase letters</label> 
+			<input type="checkbox" id="uppercase" checked />
         </div>
-
-<!-- Checkbox Numeric characters -->
- <div>
-        <input id="numeric" type="checkbox"/> Use numeric characters (12345)
-            </div>
-
-<!-- Checkbox lowercase characters -->
-<div>
-        <input id="alpha" type="checkbox"/> Use lowercase characters 
-    </div>
-<!-- Checkbox Uppercase characters -->
-<div>
-    <input id="caps" type="checkbox"/> Use uppercase characters
 </div>
-
-<div class="row mt-5">
-        <div class="col-12">
-            <button onclick="generatePassword ()" class="btn-large btn-primary">Generate My Password</button>
-            <div class="jumbotron jumbotron-fluid">
-                <div class="container">
-                  <h1  class="display-4 text-center" id="DisplayPassword">Your Password</h1>
-                </div>
-    
-    </div>
-</section>
-
-
-
-
-<script>
-
-function startScript (){
-//Acquire selections from user
-//determine what characters match with those selections
-//randomly pull at least one string from each array selected in the selected length
-//return random generated password to user
-
-    const specialchar = ["!","@","#","$","%","^","&","*","?","~"]
-    const numchar = ["0","1","2","3","4","5","6","7","8"]
-    const alphachar = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
-    const capschar = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
-  
-    document.getElementById("special", "numeric", "alpha", "caps").onclick = function() {
-    if ( this.checked ) {
-        alert( this.true );
-        if (true)
-    function generatePassword() {
-    const length = "PWlength";
-    const options = [specialchar, numchar,alphachar,capschar];
-    let DisplayPassword = 
-
-
-}
-
-
-//Change Jumbotron to display generated password
-DisplayPasswordEl.innerHTML= DisplayPassword
-
-}
-
-startScript ();
-</script>
-
-
+<div class="row">
+		<div class="setting">
+			<label>Include lowercase letters</label> 
+			<input type="checkbox" id="lowercase" checked />
+        </div>
+</div>
+<div class="row">
+		<div class="setting">
+			<label>Include numbers</label> 
+			<input type="checkbox" id="numbers" checked />
+        </div>
+</div>
+<div class="row">
+		<div class="setting">
+			<label>Include symbols</label> 
+			<input type="checkbox" id="symbols" checked />
+        </div>
+</div>
+	<button class="btn btn-primary btn-large" id="generate">
+		Generate password
+    </button>
+</div>
+</div>
+	<div class="jumbotron jumbotron-fluid bg-danger">
+		<div id="result"></div>
+	</div>
+	<script type="text/javascript" src="./main.js"></script>
 </body>
 </html>

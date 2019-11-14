@@ -18,3 +18,8 @@ https://stackoverflow.com/questions/1497481/javascript-password-generator
 
 Multiple Checkboxes
 https://www.dyn-web.com/tutorials/forms/checkbox/group.php
+
+MDN Input Elements
+https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement
+
+YOUTUBE -
