@@ -31,4 +31,24 @@ YOUTUBE - Traversy Media
 https://www.youtube.com/watch?v=duNmhKgtcsI
 This instructional video made this assignment possible. I was very stuck on where to start, and how to connect the pieces within the script. I now have a better understanding of how the javascript writing process flows, and essentially follows the patterns of initial pseudocoding. 
 
+<<<<<<< HEAD
 ### Screenshots
+=======
+## Screenshots
+https://github.com/TheMaryJacobs/PasswordGenerator/blob/master/assets/images/1.png?raw=true
+
+https://github.com/TheMaryJacobs/PasswordGenerator/blob/master/assets/images/2.png?raw=true
+
+https://github.com/TheMaryJacobs/PasswordGenerator/blob/master/assets/images/3.png?raw=true
+
+https://github.com/TheMaryJacobs/PasswordGenerator/blob/master/assets/images/4.png?raw=true
+>>>>>>> 302e4f5977cdbe8b7c14cf23413ddeb4816a2227
+
+### Screenshots
+https://github.com/TheMaryJacobs/PasswordGenerator/blob/master/assets/images/1.png?raw=true
+
+https://github.com/TheMaryJacobs/PasswordGenerator/blob/master/assets/images/2.png?raw=true
+
+https://github.com/TheMaryJacobs/PasswordGenerator/blob/master/assets/images/3.png?raw=true
+
+https://github.com/TheMaryJacobs/PasswordGenerator/blob/master/assets/images/4.png?raw=true
