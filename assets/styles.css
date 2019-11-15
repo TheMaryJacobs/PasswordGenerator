@@ -15,7 +15,7 @@ body{
 }
 
 h2{
-    font-family: 'Bungee', cursive;
+    font-family: 'Bungee Inline', sans-serif;
     letter-spacing: 2px;
     color: white;
     font-size: 34px;
@@ -23,13 +23,13 @@ h2{
 }
 
 p{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
     font-size: 18px;
     color: white;
 }
 
 .h3{
-    font-family: 'Bungee', cursive;
+    font-family: 'Bungee Inline', sans-serif;
     font-size: 22px;
     color: goldenrod;
 
@@ -44,7 +44,7 @@ p{
     text-align: center;
 }
 .password{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
     color: goldenrod;
     font-size: 28px;
     letter-spacing: 5px;
@@ -61,11 +61,15 @@ p{
 }
 
 .btn-primary{
-    background-color: goldenrod;
+    font-family: 'Roboto Slab', serif;
     border: none;
     font-family: 'Roboto', sans-serif;
 }
 .btn:hover{
     background-color: black;
-    
+}
+label{
+    font-family: 'Roboto Slab', serif;
+    color:rgb(250, 241, 200);
+    font-size: 18px;
 }
