@@ -2,16 +2,17 @@
 I wish I didn't have to, but now things make more sense, even though we didn't cover these functions in class.*/
 
 
-//DOM ELEMENTS - connect HTML elements by ID to the JS events and functions
+//DOM ELEMENTS - Define HTML elements by ID as constant variable objects.
 
 const resultEl= document.getElementById('result');
+const lengthEl= document.getElementById('length');
 const uppercaseEl= document.getElementById('uppercase');
 const lowercaseEl= document.getElementById('lowercase');
 const numbersEl= document.getElementById('numbers');
-const symbolsEl= document.getElementById('symbols');
+const symbolsEl= document.getElementById('symbols'); 
 const generateEl= document.getElementById('generate');
 
-//put below getRandom functions into an object to refer to
+//put getRandom functions into an object to refer to:
  randomFunc ={
 	lower: getRandomLower,
 	upper: getRandomUpper,
@@ -19,8 +20,24 @@ const generateEl= document.getElementById('generate');
 	symbol: getRandomSymbol
  };
 
+ //Create const variables for  
+ //+lengthEl turns from string to number
+generateEl.addEventListener('click', () => {
+	const length = +lengthEl.value;
+	const hasLower = lowercaseEl.checked;
+	const hasUpper = uppercaseEl.checked;
+	const hasNumber = numbersEl.checked;
+	const hasSymbol = symbolsEl.checked;
 
-//Generator functions
+console.log(hasLower, hasUpper, hasNumber, hasSymbol);
+
+});
+
+
+
+
+
+//Generator/GetRandom functions
 //ReturnString.fromCharCode - references the browser character set value associated with 256 characters on the keyboard.
 
 /*charset for lowercase letters a-z are 97-122 - get random letter between 

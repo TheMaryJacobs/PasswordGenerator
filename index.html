@@ -21,39 +21,38 @@
 		<div class="setting">
             <label>Password length</label>
             <p>Select the length of your password. Must be between 8-128 characters.</p>
-			<input type="number" id="length" min='4' max='20' value='20' />
+			<input type="number" id="length" min='8' max='128'value='8'/>
         </div>
     </div>
 </div>
 <br>
-<p>Select AT LEAST one type of character to use.</p>
+<p>Select AT LEAST one type of character to include.</p>
 <div class="row">
-        
-		<div class="setting">
-			<label>Include uppercase letters</label> 
-			<input type="checkbox" id="uppercase" checked />
-        </div>
-</div>
-<div class="row">
-		<div class="setting">
-			<label>Include lowercase letters</label> 
+        <div class="setting">
+			<label>Lowercase Letters</label> 
 			<input type="checkbox" id="lowercase" checked />
         </div>
 </div>
 <div class="row">
 		<div class="setting">
-			<label>Include numbers</label> 
+			<label>Uppercase Letters</label> 
+			<input type="checkbox" id="uppercase" checked />
+        </div>
+</div>
+<div class="row">
+		<div class="setting">
+			<label>Numbers</label> 
 			<input type="checkbox" id="numbers" checked />
         </div>
 </div>
 <div class="row">
 		<div class="setting">
-			<label>Include symbols</label> 
+			<label>Symbols</label> 
 			<input type="checkbox" id="symbols" checked />
         </div>
 </div>
 	<button class="btn btn-primary btn-large" id="generate">
-		Generate password
+		Generate My Password
     </button>
 </div>
 </div>
