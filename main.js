@@ -2,6 +2,24 @@
 I wish I didn't have to, but now things make more sense, even though we didn't cover these functions in class.*/
 
 
+//DOM ELEMENTS - connect HTML elements by ID to the JS events and functions
+
+const resultEl= document.getElementById('result');
+const uppercaseEl= document.getElementById('uppercase');
+const lowercaseEl= document.getElementById('lowercase');
+const numbersEl= document.getElementById('numbers');
+const symbolsEl= document.getElementById('symbols');
+const generateEl= document.getElementById('generate');
+
+//put below getRandom functions into an object to refer to
+ randomFunc ={
+	lower: getRandomLower,
+	upper: getRandomUpper,
+	number: getRandomNumber,
+	symbol: getRandomSymbol
+ };
+
+
 //Generator functions
 //ReturnString.fromCharCode - references the browser character set value associated with 256 characters on the keyboard.
 
@@ -27,12 +45,12 @@ function getRandomNumber () {
 }
 console.log(getRandomNumber());
 
-/*charset for some easy to read symbols are 33-38 - add a random number between 
-1-10, then add that array # to 48 to get into the lowercase range of characters */
+/* define the string of symbols used in generator, return a random character from that string */
 function getRandomSymbol () {
-	return String.fromCharCode(Math.floor(Math.random()* 6) +33);
+	const symbols = '!@#$%^&*?~';
+	return symbols[Math.floor(Math.random()* symbols.length)];
 }
 console.log(getRandomSymbol());
-
+//=================================================================================
 
 
