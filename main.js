@@ -71,7 +71,11 @@ if(typesCount === 0){
 	 });
  }
 //OMG LOG THAT CONSOLE GET THAT PASSWORD YO!
-console.log(generatedPassword);
+	console.log(generatedPassword);
+
+	const finalPassword = generatedPassword;
+//displays the generated password by changing innerHTML above on line 32
+	return finalPassword;
 
 }
 
