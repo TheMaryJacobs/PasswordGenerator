@@ -1,0 +1,71 @@
+body{
+    background-color: rgb(57, 57, 57);
+    background-image: url('./images/Gold\ copy.jpeg');
+    background-repeat: repeat-y;
+}
+
+
+.container {
+    width: auto;
+    height: auto;
+    padding: 25px, 25px;
+    align-content: center;
+    background-color: rgba(0, 0, 0, 0.762);
+    
+}
+
+h2{
+    font-family: 'Bungee', cursive;
+    letter-spacing: 2px;
+    color: white;
+    font-size: 34px;
+    text-align: center;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+.h3{
+    font-family: 'Bungee', cursive;
+    font-size: 22px;
+    color: goldenrod;
+
+}
+
+.label{
+    font-color: white;
+    font-size: 12px;
+}
+.jumbotron{
+    background-color: black;
+    text-align: center;
+}
+.password{
+    font-family: 'Roboto', sans-serif;
+    color: goldenrod;
+    font-size: 28px;
+    letter-spacing: 5px;
+}
+
+.input{
+    align-items: center;
+    align-self: center;
+}
+
+.setting{
+    align-content: center;
+    justify-content: center;
+}
+
+.btn-primary{
+    background-color: goldenrod;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+}
+.btn:hover{
+    background-color: black;
+    
+}

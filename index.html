@@ -4,61 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/css?family=Bungee|Press+Start+2P|Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="./assets/styles.css">
 
 </head>
-<body class="">
+<body>
 <!-- ========================================================================================================= -->
-<nav class="navbar sticky-top navbar-light bg-warning">
-        <a class="navbar-brand" href="#">Super Secure and Functional Password Generator</a>
-</nav>
 
-<div class="container m-5 pl-5 pt-5 pb-3 justify-content-center shadow bg-white">   
-<div class="row">
-    <h2>Generate a random password based on your choosen criteria.</h2>
+<div class="container m-5 p-5 align-center shadow">   
+<div class="row m-2">
+    <h2 class="h2">Random Password Generator</h2>
 	<div class="settings">
 		<div class="setting">
-            <label>Password length</label>
-            <p>Select the length of your password. Must be between 8-128 characters.</p>
-			<input type="number" id="length" min='8' max='128'value='8'/>
+            <p>Select the following criteria to generate a random password.<br>The length of your password. Must be between 8-128 characters.<br>You must select at least one type of character.</p>
+			<input class="input m-3" type="number" id="length" min='8' max='128'value='8'/>
         </div>
     </div>
 </div>
-<br>
-<p>Select AT LEAST one type of character to include.</p>
-<div class="row">
+<div class="row m-2">
+	<div class="col-auto text-align-center">
         <div class="setting">
-			<label>Lowercase Letters</label> 
+			<label><p>Lowercase Letters</p></label> 
 			<input type="checkbox" id="lowercase" checked />
-        </div>
-</div>
-<div class="row">
+		</div>
+	</div>
+	<div class="col-auto text-align-center">
 		<div class="setting">
-			<label>Uppercase Letters</label> 
+			<label><p>Uppercase Letters</p></label> 
 			<input type="checkbox" id="uppercase" checked />
-        </div>
+	    </div>
+    </div>
 </div>
-<div class="row">
+<div class="row m-2">
+	<div class="col-auto text-align-center">
 		<div class="setting">
-			<label>Numbers</label> 
+			<label><p>Numbers</p></label> 
 			<input type="checkbox" id="numbers" checked />
         </div>
 </div>
-<div class="row">
+	<div class="col-auto text-align-center">
 		<div class="setting">
-			<label>Symbols</label> 
-			<input type="checkbox" id="symbols" checked />
-        </div>
+			<label><p>Symbols</p></label> 
+			<input class="checkbox" type="checkbox" id="symbols" checked />
+		</div>
+	</div>
 </div>
 	<button class="btn btn-primary btn-large" id="generate">
 		Generate My Password
     </button>
 </div>
-</div>
-	<div id="result" class="jumbotron jumbotron-fluid bg-danger">
-		<div id="result"></div>
+
+<div>
+	<div class="jumbotron center-text overflow-auto">
+		<div id="result" class="password center-text overflow-auto"></div>
 	</div>
+</div>
+
+
+
 	<script type="text/javascript" src="./main.js"></script>
+
+	
 </body>
 </html>
