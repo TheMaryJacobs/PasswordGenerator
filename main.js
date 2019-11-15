@@ -29,10 +29,51 @@ generateEl.addEventListener('click', () => {
 	const hasNumber = numbersEl.checked;
 	const hasSymbol = symbolsEl.checked;
 
-console.log(hasLower, hasUpper, hasNumber, hasSymbol);
+  resultEl.innerHTML = generatePassword(
+	  hasLower, hasUpper, hasNumber, hasSymbol,length);
 
 });
 
+//Generate Password Function - passes random characters into function
+function generatePassword (lower, upper, number, symbol, length) {
+	// build a string to create a password
+	// filter through checked boxes
+	// make it the set length
+	// put the password in the display box
+
+let generatedPassword = '';
+
+//this tells us how many boxes the user checked
+const typesCount = lower + upper + number + symbol;
+	console.log('typesCount: ',typesCount);
+
+// by putting curly braces around the array types, it returns more specific info to build a new array
+const typesArr = [{lower}, {upper}, {number}, {symbol}].filter
+//filter is an array method that loops through the items, and adds together the true/checked elements into an array.
+(item=> Object.values(item)[0]);
+	console.log('typesArr: ',typesArr)
+
+//check if there are no boxes checked, return an alert, and do not generate password
+if(typesCount === 0){
+	return '';
+	// alert('Please select at least one character type');
+}
+
+//call the generator function for each type, and 'for' loop it until it meets 
+//the right length based on the number of checked boxes
+ for (let i=0; i<length; i+= typesCount) {
+	 //loop through the arrays
+	 typesArr.forEach(type => {
+		 const funcName = Object.keys(type)[0];
+		 //take generated password string based on typesArray
+
+		 generatedPassword += randomFunc[funcName]();
+	 });
+ }
+//OMG LOG THAT CONSOLE GET THAT PASSWORD YO!
+console.log(generatedPassword);
+
+}
 
 
 
