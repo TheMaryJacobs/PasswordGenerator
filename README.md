@@ -42,13 +42,3 @@ https://github.com/TheMaryJacobs/PasswordGenerator/blob/master/assets/images/2.p
 https://github.com/TheMaryJacobs/PasswordGenerator/blob/master/assets/images/3.png?raw=true
 
 https://github.com/TheMaryJacobs/PasswordGenerator/blob/master/assets/images/4.png?raw=true
->>>>>>> 302e4f5977cdbe8b7c14cf23413ddeb4816a2227
-
-### Screenshots
-https://github.com/TheMaryJacobs/PasswordGenerator/blob/master/assets/images/1.png?raw=true
-
-https://github.com/TheMaryJacobs/PasswordGenerator/blob/master/assets/images/2.png?raw=true
-
-https://github.com/TheMaryJacobs/PasswordGenerator/blob/master/assets/images/3.png?raw=true
-
-https://github.com/TheMaryJacobs/PasswordGenerator/blob/master/assets/images/4.png?raw=true
