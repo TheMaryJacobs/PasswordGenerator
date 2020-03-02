@@ -13,54 +13,53 @@
 <body>
 <!-- ========================================================================================================= -->
 
-<div class="container m-5 p-5 align-center shadow">   
-<div class="row m-2">
-    <h2 class="h2">Random Password Generator</h2>
-	<div class="settings">
-		<div class="setting">
-            <p>Select the following criteria to generate a random password.<br>The length of your password must be between 8-128 characters.<br>You must select at least one type of character.</p>
-			<input class="input m-3" type="number" id="length" min='8' max='128' value='8'/>
-        </div>
-    </div>
-</div>
-<div class="row m-2">
-	<div class="col-auto text-align-center">
-        <div class="setting">
-			<label>Lowercase Letters</label> 
-			<input type="checkbox" id="lowercase" checked />
+<div class="container shadow">   
+	<br>
+		<h2 class="h2">Random Password Generator</h2>
+		<div class="row intro">	
+				<div class="setting">
+					<p>Select the following criteria to generate a random password.<br>The length of your password must be between 8-128 characters.<br>You must select at least one type of character.</p>
+					<input class="length m-3" type="number" id="length" min='8' max='128' value='8'/>
+				</div>
 		</div>
-	</div>
-	<div class="col-auto text-align-center">
-		<div class="setting">
-			<label>Uppercase Letters</label> 
-			<input type="checkbox" id="uppercase" checked />
-	    </div>
-    </div>
-</div>
-<div class="row m-2">
-	<div class="col-auto text-align-center">
-		<div class="setting">
-			<label>Numbers</label> 
-			<input type="checkbox" id="numbers" checked />
-        </div>
-</div>
-	<div class="col-auto text-align-center">
-		<div class="setting">
-			<label>Symbols</label> 
-			<input class="checkbox" type="checkbox" id="symbols" checked />
+		<div class="row intro">
+			<div class="col-auto">
+				<div class="setting">
+					<label>Lowercase Letters</label> 
+					<input type="checkbox" id="lowercase" checked />
+				</div>
+			</div>
+			<div class="col-auto">
+				<div class="setting">
+					<label>Uppercase Letters</label> 
+					<input type="checkbox" id="uppercase" checked />
+				</div>
+			</div>
 		</div>
-	</div>
-</div>
-	<button class="btn btn-primary btn-large m-3" id="generate">
-		Generate My Password
-    </button>
+		<div class="row intro">
+			<div class="col-auto">
+				<div class="setting">
+					<label>Numbers</label> 
+					<input type="checkbox" id="numbers" checked />
+				</div>
+		</div>
+			<div class="col-auto text-align-center">
+				<div class="setting">
+					<label>Symbols</label> 
+					<input class="checkbox" type="checkbox" id="symbols" checked />
+				</div>
+			</div>
+		</div>
+			<button class="btn btn-large m-3" id="generate">
+				Generate My Password
+			</button><br>
 </div>
 
-<div>
-	<div class="jumbotron center-text overflow-auto">
+
+	<div class="jumbotron pwdisplay">
 		<div id="result" class="password center-text overflow-auto"></div>
 	</div>
-</div>
+
 
 
 

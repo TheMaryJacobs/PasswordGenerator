@@ -6,14 +6,18 @@ body{
 
 
 .container {
-    width: auto;
-    height: auto;
-    padding: 25px, 25px;
+    margin: 25px, auto;
+    margin-top: 25px;
+    padding: 15px, 15px;
+    text-align: center;
     align-content: center;
     background-color: rgba(0, 0, 0, 0.762);
-    
 }
 
+.intro{
+    align-content: center;
+    justify-content: center;
+}
 h2{
     font-family: 'Bungee Inline', sans-serif;
     letter-spacing: 2px;
@@ -36,40 +40,64 @@ p{
 }
 
 .label{
-    font-color: white;
+    color: white;
     font-size: 12px;
 }
-.jumbotron{
+
+.pwdisplay{
     background-color: black;
     text-align: center;
+    border-radius: 0px;
+    width: 100%;
+    height: 100px;
+    margin-top: 25px;
 }
 .password{
     font-family: 'Roboto Slab', serif;
-    color: goldenrod;
+    color: #b78d5a;
     font-size: 28px;
     letter-spacing: 5px;
 }
 
-.input{
+.length{
     align-items: center;
     align-self: center;
+    width: 300px;
 }
 
-.setting{
-    align-content: center;
-    justify-content: center;
-}
 
-.btn-primary{
+#generate{
     font-family: 'Roboto Slab', serif;
     border: none;
-    font-family: 'Roboto', sans-serif;
+    background-color: #b78d5a;
+    color: white;
 }
-.btn:hover{
+#generate:hover{
     background-color: black;
+    color: #b78d5a;
 }
 label{
     font-family: 'Roboto Slab', serif;
     color:rgb(250, 241, 200);
     font-size: 18px;
 }
+
+@media only screen and (max-width: 600px) {
+    .container{
+      margin: none;
+      text-align: center;
+      align-content: center;
+
+    }
+    .length{
+      width: 100px;
+    }
+
+    .intro{
+        font-size: 12px;
+    }
+
+    p{
+        font-size: 12px;
+    }
+  }
